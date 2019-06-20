@@ -32,7 +32,22 @@ Tools Used:
 * union processing tool - topological overlay of two polygon datasets; the output preserves the features that fall within the spatial extent of either dataset
 * dissolve processing tool- creates a single feature multi-polygon shape layer from a multi-feature multi-polygon shape layer while maintaining all the original attributes
 
-### Exercise 5: Vector Data Analysis- Crating a site selection model
+### Exercise 5: Vector Data Analysis- Creating a site selection model
 In this exercise I use the Processing Modeler Tool to build a reproducible and automated multi-step data analysis model to discover airports that meet the specific criteria provided by a client. Specifically the model discovers airports located in Nueces County, Texas that are within 3 miles of Corpus Christi city limits (but not within the city), 0.5 miles within any source of water and within 1 mile of a county road.
 
 What is great about using the Processing Modeler Tool, is that the model is saved and can be used on different datasets and ran as a single process. Additionally, the model can be exported as python code.
+
+### Exercise 7: Raster Data Analysis- Working with Topographic Data
+In this exercise I used a digital elevation model raster to determine suitable habitat for a plant species. Specifically, starting with a digital elevation model raster layer (.dem), I used the Raster Terrain Analysis Processing Tools to calculate the hillshade, slope and aspect. I used the reclassification tool to aggregate the continuous data from the slope and aspect rasters into categorical data that corresponded to suitable habitat for plant species A. Lastly, to determine habitat suitability while accounting for both slope and aspect, I performed a raster calculation where I added the reclassified slope and aspect raster layers together.
+
+### Exercise 8: Raster Data Analysis- Density Surfaces
+create a heatmap from vector data points
+
+## PART 3: Data Acquisition and Management
+
+### Exercise 4
+aggregating data. grouped by subregion
+stylized a map
+
+### Exercise 5: Raster Data Structure
+merging and clipping raster data- raster data often come in tiles and need to be merged together to form a seamless raster covering the study area
